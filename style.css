@@ -128,19 +128,93 @@ nav li a{
     margin-left: 20px;
 }
 
+@media(max-width: 1380px){
+.box1{
+    margin-top: 200px;
+}
+
+.Creative{
+    font-size: 1rem;
+    margin-right: 10rem;
+}
+
+.bt{
+    margin-top: 50px;
+}
+}
+
 
 /* ================================Services Line============================ */
 
 .Service{
     height: 500px;
-    background-color: aqua;
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ justify-items: center;
+ align-items: center;
+
 }
 
 .tag{
     width: 400px;
+margin-left: 20px;
+}
+
+.tag-lines{
+padding: 20px;
+font-size: 1.5rem;
+}
+
+.Timer{
+    color: orange;
+}
+
+.para2{
     font-family: "Lexend", sans-serif;
+    color: grey;
+}
+
+.line2{
+    width: 400px;
+    border: 0.2px solid lightgray;
+    margin-top: 20px;
+}
+
+.box3{
+    width: 100vw;
+    height: 120px;
+    background-color: lightgray;
+display: flex;
+align-items: center;
+justify-content: center;
 
 }
 
+.text2{
+    font-family: "Montserrat", sans-serif;
+    padding: 28px;
+    color: lightslategray;
+}
+
+.Purchase_now{
+    width: 200px;
+    height: 50px;
+    background-color: transparent;
+    color: rgb(63, 63, 63);
+    font-size: 0.8rem;
+    font-family: "Lexend", sans-serif;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: 1px solid rgb(65, 65, 65);
+    margin-left: 20px;
+}
+
+.background-image3{
+    width: 99vw;
+    height: 50vh;
+    background-size: cover;
+    background-image: url(mountain.jpg);
+}
 
 
