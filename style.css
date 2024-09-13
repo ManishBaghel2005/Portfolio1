@@ -4,11 +4,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300&display=swap');
 
-{
-    font-family: "Montserrat", sans-serif;
-    font-family: "Lexend", sans-serif;
-    font-family: "Archivo Black", sans-serif;
-}
+
 
 *{
     margin: 0;
@@ -16,8 +12,12 @@
     box-sizing: border-box;
 }
 
+
+.Home{
+max-height: 900vh;
+}
 nav{
-    width: 100%;
+    width: 99vw;
     height: 70px;
     background-color: grey;
     align-content: center;
@@ -46,12 +46,19 @@ nav li a{
 }
 
 
+nav ul li a:hover{
+    transition: all 0.5s;
+    color: rgb(229, 255, 0);
+ 
+}
+
 
 .background-image{
     height: 100vh;
     width: 99vw;
     background-size: cover;
     background-image: url(man.jpg);
+
 }
 
 .text1{
@@ -112,6 +119,7 @@ nav li a{
     letter-spacing: 2px;
     text-transform: uppercase;
     border: none;
+
 }
 
 .Buy_now{
@@ -128,32 +136,21 @@ nav li a{
     margin-left: 20px;
 }
 
-@media(max-width: 1380px){
-.box1{
-    margin-top: 200px;
-}
-
-.Creative{
-    font-size: 1rem;
-    margin-right: 10rem;
-}
-
-.bt{
-    margin-top: 50px;
-}
-}
 
 
-/* ================================Services Line============================ */
+
+/* ================================Services Line ============================ */
 
 .Service{
     height: 500px;
- display: grid;
- grid-template-columns: 1fr 1fr 1fr;
+ display: flex;
+flex-wrap: wrap;
  justify-items: center;
  align-items: center;
-
+overflow: hidden;
 }
+
+
 
 .tag{
     width: 400px;
@@ -181,7 +178,7 @@ font-size: 1.5rem;
 }
 
 .box3{
-    width: 100vw;
+    width: 99vw;
     height: 120px;
     background-color: lightgray;
 display: flex;
@@ -235,11 +232,377 @@ font-size: 1.5rem;
 }
 
 .block1{
-  width: 500px;
+  width: 680px;
 
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
+.box4{
+    display: flex;
+   
+    justify-content: center;
+}
+
+.laptop{
+margin-left: 5px;
+
+}
+
+.laptop img{
+    margin-top: 20px;
+    width: 90%;
+}
 
 
+@media(max-width=1380){
+    .box4{
+        font-size: 1rem;
+        justify-content: center;
+    }
+
+    .laptop img{
+        width: 95%;
+    }
+}
+
+.Portfolio{
+    width: 99vw;
+    height: 30vh;
+    background-color: rgb(43, 42, 42);
+    margin-top: 80px;
+
+    align-items: center;
+    justify-content: center;
+}
+
+
+.potrfoiliotext{
+
+    color: white;
+ 
+    font-family: "Lexend", sans-serif;
+}
+
+.box5{
+display: flexbox;
+    width: 700px;
+margin-left: 500px;
+text-align: center;
+padding-top: 50px;
+}
+
+.my_para1{
+    color: white;
+    font-family: "Lexend", sans-serif;
+    padding-top: 30px;
+}
+
+.select{
+margin-left: 500px;
+margin-top: 80px;
+}
+
+.btn2{
+   background-color: transparent;
+   border: none;
+   color: white;
+   text-transform: uppercase;
+    width: 150px;
+}
+
+.portfoilo_image{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.photo{
+    position: relative;
+    transition: all 1s;
+
+background-size: cover;
+}
+
+.portfoilo_image .photo:hover{
+
+transform: scale(1.1);
+overflow: hidden
+}
+
+
+.capatibilities{
+    height: 50vh;
+    width: 99vw;
+    text-align: center;
+
+}
+
+.potrfoiliotext1{
+    color: black;
+    font-family: "Lexend", sans-serif;
+}
+
+
+.boxx1{
+    margin-top: 10px;
+ 
+}
+
+.Design{
+    width: 50px;
+    background-color: orange;
+}
+
+.Hard{
+    width: 550px;
+    height: 80px;
+    background-color: orange;
+    border: none;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.box6{
+    max-height: 1080vh;
+ 
+ 
+    background-color: rgb(230, 230, 230);
+    text-align: center;
+}
+
+.potrfoiliotext2{
+    font-family: "Lexend", sans-serif;
+    padding-top: 150px;
+
+}
+
+.my_para3{
+    margin-left: 600px;
+    text-align: center;
+    font-family: "Lexend", sans-serif;
+    width: 700px;
+    padding-top: 20px;
+}
+
+.container2{
+    display: flex;
+}
+
+.computerimage{
+    width: 50%;
+}
+
+.computerimage:hover{
+    animation-duration: 0.5s;
+    animation-name: slidein;
+    animation-direction: initial;
+    transition: all 1s ease-in-out;
+}
+
+@keyframes slidein {
+  from {
+    translate: 50vw 0;
+    scale: 200% 1;
+  }
+
+  to {
+    translate: 5 1;
+    scale: 100% 1;
+  }
+}
+
+.TEXTtry{
+    width: 50%;
+ 
+    padding-top: 120px;
+}
+
+.Brand{
+    font-family: "Lexend", sans-serif;
+    font-size: 2rem;
+padding-bottom: 50px;
+}
+
+.my_para4{
+margin-left: 80px;
+    font-family: "Lexend", sans-serif;
+    width: 650px;
+}
+
+.purchase{
+    background-color: rgb(202, 16, 16);
+    color: white;
+    font-family: "Lexend", sans-serif;
+    width: 150px;
+    height: 50px;
+    border: none;
+    margin-top: 90px;
+    font-size: 1rem;
+}
+
+.Features{
+    display: flex;
+}
+
+
+.textpart{
+    width: 50%;
+    height: 70vh;
+
+}
+
+.imagepart{
+    width: 50%;
+    height: 70vh;
+    
+    padding-top: 50px;
+}
+
+.imagepart:hover{
+    animation-duration: 0.5s;
+    animation-name: slidein;
+    animation-direction: initial;
+    transition: all 1s ease-in-out;
+}
+
+.createbox{
+    width: 450px;
+    display: flexbox;
+ margin-left: 250px;
+ margin-top: 50px;
+ font-family: "Lexend", sans-serif;
+}
+
+
+.box7{
+    height: 70vh;
+padding-top: 150px;
+}
+
+.potrfoiliotext3{
+    text-align: center;
+    font-family: "Lexend", sans-serif;
+}
+
+
+.contanier-box{
+display: flex;
+margin-top: 50px;
+justify-content: center;
+}
+
+
+.my-friend-photo{
+width: 300px;
+}
+
+.outerbox{
+    height: 350px;
+    
+}
+
+.box8{
+    background-color: rgb(0, 23, 87);
+    height: 70vh;
+    padding-top: 50px;
+    color: white;
+}
+
+
+.potrfoiliotext4{
+    text-align: center;
+    font-family: "Lexend", sans-serif;  
+}
+
+.textboxx{
+    width: 500px;
+    height: 40px;
+
+}
+
+
+
+form{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.send{
+    width: 500px;
+    height: 50px;
+    background-color: orange;
+    border: none;
+    font-size: 1rem;
+}
+
+
+@media(max-width: 1380px){
+    .box1{
+        margin-top: 200px;
+    }
+    
+    .Creative{
+        font-size: 1rem;
+        margin-right: 10rem;
+    }
+    
+    .bt{
+        margin-top: 50px;
+    }
+    }
+
+@media(max-width =	1280px){
+    
+    .Creative{
+        font-size: 0.8rem;
+        margin-right: 10rem;
+        position: relative;
+    }
+
+    .Agency{
+        font-size: 0.5rem;
+    }
+
+    .bt{
+        width: 500px;
+        height: 80px;
+position: relative;
+    }
+    
+    .discovry{
+        width: 200px;
+        height: 50px;
+        background-color: rgb(201, 56, 56);
+        color: white;
+        font-size: 0.8rem;
+        font-family: "Lexend", sans-serif;
+        font-weight: bolder;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        border: none;
+    
+    }
+
+    .background-image{
+        height: 450vh;
+        width: 99vw;
+        background-size: contain;
+        background-image: url(man.jpg);
+        position: static;
+    }
+
+    .Service{
+        height: 500px;
+     display: grid;
+     grid-template-rows: 1fr  1fr;
+
+     justify-items: center;
+     align-items: center;
+  
+    
+    }
+
+    .Home{
+       font-size: 1rem;
+        }
+}
